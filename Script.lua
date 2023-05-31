@@ -3,7 +3,7 @@ local hiddenfling = false
 game:GetService("UserInputService").InputBegan:Connect(function(Input, GPE)
 	if GPE then return end
 
-	if Input.KeyCode == Enum.KeyCode[getgenv().PunchKeyCode] then
+	if Input.KeyCode == Enum.KeyCode.K then
 		local p = game:GetService("Players").LocalPlayer
 		local c = p.Character
 		local h = c:FindFirstChildOfClass("Humanoid")
